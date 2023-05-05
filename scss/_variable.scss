@@ -1,0 +1,54 @@
+//default
+$fontStyle: "微軟正黑體", "LiHei Pro" ,"sans-serif";
+$fontBase: 16px;
+$backGroundColor: #FFF;
+$fontColor: #6C6B6C;
+$lineHeightBase: 1.65;
+$linkColor: #6C6B6C;
+
+// 灰階
+$white: white;
+$white10: darken($white, 10%);
+$white20: darken($white, 20%);
+$white30: darken($white, 30%);
+$white40: darken($white, 40%);
+$white50: darken($white, 50%);
+$white60: darken($white, 60%);
+$white70: darken($white, 70%);
+$white80: darken($white, 80%);
+$white90: darken($white, 90%);
+$black: black;
+
+//font
+$fontSize32: $fontBase * 2;
+$fontSize28: $fontBase * 1.75;
+$fontSize26: $fontBase * 1.6;
+$fontSize24: $fontBase * 1.5;
+$fontSize23: $fontBase * 1.438;
+$fontSize22: $fontBase * 1.375;
+$fontSize21: $fontBase * 1.313;
+$fontSize20: $fontBase * 1.25;
+$fontSize19: $fontBase * 1.188;
+$fontSize18: $fontBase * 1.125;
+$fontSize17: $fontBase * 1.063;
+$fontSize16: $fontBase * 1;
+$fontSize15: $fontBase * 0.938;
+$fontSize14: $fontBase * 0.875;
+$fontSize13: $fontBase * 0.813;
+$fontSize12: $fontBase * 0.75;
+$fontSize11: $fontBase * 0.688;
+$fontSize10: $fontBase * 0.625;
+$fontSize09: $fontBase * 0.563;
+$fontSize08: $fontBase * 0.5;
+$fontSize07: $fontBase * 0.438;
+$fontSize06: $fontBase * 0.375;
+
+// line-height
+$lineHeight12: $lineHeightBase * 0.75em;  //12px
+$lineHeight14: $lineHeightBase * 0.875em; //14px
+$lineHeight16: $lineHeightBase * 1;     //16px
+$lineHeight18: $lineHeightBase * 1.125; //18px
+$lineHeight20: $lineHeightBase * 1.25em;  //20px
+$lineHeight22: $lineHeightBase * 1.375em;  //22px
+$lineHeight24: $lineHeightBase * 1.5em;  //24px
+$lineHeight28: $lineHeightBase * 1.75em;  //28px
