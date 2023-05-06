@@ -1,10 +1,107 @@
 // google font
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap');
+ 
+$bgColor: #1E1E1E;
+$black100: #020202;
+$black80: #525252;
+$black60: #919191;
+$black40: #D1D1D1;
+$black20: #F2F2F2;
+$black0: white;
+$primary: #f18724;
+$surface: #F2EFE7;
 
 //default
 html, body {
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 16px;
-    line-height: 1.4;
-    background: black;
+    font-weight: 400;
+    line-height: 24px;
+    background: $bgColor;
+}
+.container {
+    @include border-box-sizing;
+    width: 100%;
+    max-width: 1296px;
+    margin: auto;
+}
+.container-full {
+    @include border-box-sizing;
+    width: 100%;
+    background: $black0;
+    padding: 160px 12px;
+}
+// .title {
+//     font-size: 80px;
+//     font-weight: 900;
+//     line-height: 96px;
+//     text-align: right;
+// }
+.card {
+    @include border-box-sizing;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &_list {
+        @include border-box-sizing;
+        width: 33.333%;
+        max-width: 416px;
+        border-radius: 16px;
+        border: 1px solid $black20;
+        margin-right: 24px;
+        margin-bottom: 24px;
+        overflow: hidden;
+
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        &_item {
+            border-bottom: 1px solid $black20;
+            padding: 20px 32px;
+            color: $black100;
+            // font-size: 16px;
+            // font-weight: 400;
+            // line-height: 24px;
+
+            &:last-child {
+                border: none;
+            }
+
+            &_title {
+                font-size: 20px;
+                font-weight: 900;
+                line-height: 24px;
+                margin-bottom: 12px;
+            }
+            &_desc {
+                font-size: 14px;
+                line-height: 21px;
+                color: $black80;
+                min-height: 42px;
+            }
+            &_model {
+                font-weight: 700;
+            }
+            &_name {
+                float: right;
+                font-weight: 400;
+            }
+        }
+    }
+    &_img {
+        width: 100%;
+    }
+}
+.icons {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    &_share {
+        background: url("/images/icons/share.png");
+        background-size: cover;
+        float: right;
+    }
 }

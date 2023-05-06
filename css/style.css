@@ -1,5 +1,5 @@
 /* CSS Document */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap");
 html, body, div, section, aside, figure, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -74,6 +74,93 @@ table {
 html, body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
-  line-height: 1.4;
-  background: black;
+  font-weight: 400;
+  line-height: 24px;
+  background: #1E1E1E;
+}
+
+.container {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  max-width: 1296px;
+  margin: auto;
+}
+
+.container-full {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: white;
+  padding: 160px 12px;
+}
+
+.card {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.card_list {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 33.333%;
+  max-width: 416px;
+  border-radius: 16px;
+  border: 1px solid #F2F2F2;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.card_list:nth-child(3n) {
+  margin-right: 0;
+}
+.card_list_item {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 20px 32px;
+  color: #020202;
+}
+.card_list_item:last-child {
+  border: none;
+}
+.card_list_item_title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.card_list_item_desc {
+  font-size: 14px;
+  line-height: 21px;
+  color: #525252;
+  min-height: 42px;
+}
+.card_list_item_model {
+  font-weight: 700;
+}
+.card_list_item_name {
+  float: right;
+  font-weight: 400;
+}
+.card_img {
+  width: 100%;
+}
+
+.icons {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.icons_share {
+  background: url("/images/icons/share.png");
+  background-size: cover;
+  float: right;
 }/*# sourceMappingURL=style.css.map */

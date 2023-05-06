@@ -1,0 +1,10 @@
+@mixin border-box-sizing {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+@mixin hide-text {
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
